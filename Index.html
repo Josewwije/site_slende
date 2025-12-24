@@ -1,8 +1,115 @@
-# If you already have master and want to rename it to main:
-git checkout master
-git branch -m master main
-git push -u origin main
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slende • Teste</title>
 
-# Or create main from current branch:
-git checkout -b main
-git push -u origin main
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0f1a, #1b1b2f, #0f3460);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      border-radius: 18px;
+      padding: 30px 26px;
+      width: 90%;
+      max-width: 380px;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1s ease;
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 22px;
+    }
+
+    .line {
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+      margin: 18px 0;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 14px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00d4ff, #0077ff);
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      opacity: 0.6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">SLENDE</div>
+    <div class="subtitle">Página de teste • Render</div>
+
+    <div class="line"></div>
+
+    <p>Site funcionando corretamente 🚀</p>
+
+    <button class="btn" onclick="alert('Tudo certo! 😄')">
+      Testar JavaScript
+    </button>
+
+    <div class="footer">
+      © 2025 Slende • Teste
+    </div>
+  </div>
+
+</body>
+</html>
