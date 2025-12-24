@@ -1,0 +1,8 @@
+# If you already have master and want to rename it to main:
+git checkout master
+git branch -m master main
+git push -u origin main
+
+# Or create main from current branch:
+git checkout -b main
+git push -u origin main
